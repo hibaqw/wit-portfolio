@@ -1,0 +1,286 @@
+/* without this background colours/images will not cover full screen width */
+body {
+  margin: 0;
+}
+
+/* setting background color for all sections */
+.nav-bar,
+#hero-section,
+#about-section,
+#projects-section {
+  background-color: #F3FDE8;
+}
+
+/* setting background-color for contact section */
+#contact-section {
+  background-image: url('./docs/vecteezy_plaid-pattern-seamless-repeat-vector-in-pink-and-white_.jpg');
+  background-repeat: no-repeat;
+}
+
+.nav-list {
+  /* ensures underline is removed for all anchor tags in navbar*/
+  list-style: none;
+  /* increase size of margin-right of unordered list by 5% ( 5% of parent's width) */
+  margin-right: 5%;
+}
+
+#nav-title,
+#about-info {
+  /* applying margin-left 5% to perfectly align portfolio and about me heading and text along left side of webpage
+  */
+  margin-left: 5%;
+
+}
+
+li>a,
+#nav-title-link {
+  /* removing default text-decoration from all anchor tags with an li parent and the portfolio logo */
+  text-decoration: none;
+  font-size: x-large;
+}
+
+
+#nav-title-link>h2, h1{
+  font-weight: 700;
+}
+
+h1{
+  font-size: xxx-large;
+}
+
+h2.section-header, h1,.nav-links, #nav-title-link, p {
+  color: #FFBFBF;
+}
+
+
+#hero-header>h1 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #A8DF8E;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #A8DF8E;
+  }
+}
+
+
+.nav-bar {
+  /* applying flex-box */
+  display: flex;
+  /* ensures that content inside nav-bar is spaced */
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  /* evenly spaces nav-list-items */
+  justify-content: space-around;
+  /* ul and all its children take up 25% of parent */
+  width: 25%;
+  /* align items vertically in the center of ul container*/
+  align-items: center;
+}
+
+#nav-title-link>h2, .section-header,
+.nav-links, #nav-title-link,
+p,
+label, input{
+  font-family:'Pally', sans-serif;
+}
+
+
+
+
+
+.nav-links, h2.section-header
+{
+  font-weight: 500;
+}
+
+h2.section-header{
+  font-size: xx-large;
+}
+
+.nav-links {
+  font-size: x-large;
+}
+
+
+/* Slide in */
+.nav-links {
+  position: relative;
+}
+
+.nav-links:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  background-color: #A8DF8E;
+}
+
+.nav-links:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+#hero-section,
+#about-section,
+#projects-section,
+#contact-section {
+  display: flex;
+  align-items: center;
+  /* 100vh = 100% of view port's height i.e desktop screen */
+  height: 100vh;
+}
+
+#hero-section,
+#projects-section {
+  justify-content: center;
+}
+
+#hero-section {
+  flex-direction: column;
+}
+#hero-section > p {
+   
+  font-size: x-large;
+}
+
+#about-info>p, #contact-info>p{
+  /* specifies height of line */
+  line-height: 2;
+  font-size: large;
+}
+
+#about-info {
+  /* width of about-info is 85% of parent */
+  width: 85%
+}
+
+#contact-info  {
+  color: #A8DF8E;
+  width: 40%;
+}
+
+#image-container {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+#image-container>img {
+  border-radius: 25px;
+  width: 35%;
+  height: 35%;
+  /* all animations (scaling) will be applied on image will be animated over a duration of 0.2 seconds */
+  transition: all .2s ease-in-out;
+}
+
+
+#image-container>img:hover {
+  /* resizes image on hover */
+  transform: scale(1.1);
+}
+
+
+#contact-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact-heading, #contact-text, label {
+  color: #A8DF8E;
+}
+
+
+input,textarea{
+  border: 2px solid #A8DF8E;
+  vertical-align: text-top;
+  color: #A8DF8E;
+}
+input,textarea{
+  border-radius: 5px;
+}
+
+input.text-input,textarea{
+  /* code to have textarea and input field be the same length */
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 400px;
+}
+
+.text-input {
+  height: 30px;
+  line-height: 30px;
+}
+input[type="submit"]{
+  padding: 15px 50px;
+  color: #fff;
+  border: none;
+  background-color: #A8DF8E;
+}
+
+input[type="submit"]:hover{
+  /* change submit button color on hover */
+  background-color: #fff;
+  color: #A8DF8E;
+  border: 2px solid #A8DF8E;
+}
+textarea{
+  height: 200px;
+}
+
+#icon-container{
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
+  justify-content: center;
+  gap: 20%;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #FFE5E5;
+}
+#footer-text{
+  color: #000;
+}
+

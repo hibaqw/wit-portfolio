@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link to stylesheet -->
+  <link rel="stylesheet" href="portfolio.css" />
+  <!-- link to font share -->
+  <link href="https://api.fontshare.com/v2/css?f[]=pally@400,700,500&display=swap" rel="stylesheet">
+  <!-- link to cdjns font-awesome library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Hibaq's Portfolio</title>
+</head>
+
+<body>
+  <!-- navigation menu -->
+  <nav class="nav-bar">
+    <div id="nav-title"> <a href="#hero-section" id="nav-title-link">
+        <h2>Hibaq 🍓 </h2>
+      </a></div>
+    <!-- nav items -->
+    <ul class="nav-list">
+      <li><a href="#about-section" class="nav-links">About</a></li>
+      <li><a href="#projects-section" class="nav-links">Projects</a></li>
+      <li><a href="#contact-section" class="nav-links">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- hero section -->
+  <section id="hero-section">
+    <header id="hero-header">
+      <h1 class="section-header">Hi I'm Hibaq 👋</h1>
+    </header>
+    <p>I'm a software developer from Canada!</p>
+  </section>
+  <!-- about section -->
+  <section id="about-section">
+    <!-- container for text in about section -->
+ 
+    <div id="about-info">
+      <header>
+        <h2 class="section-header">About me 🤍 </h2>
+      </header>
+      <p>Hi again, I'm a software developer with a background in Political Science and a minor in Computer Science,
+        recently
+        graduated from Lighthouse Labs. Barring the second half of that sentence, its quite the unconventional
+        combination, but I attribute my cross-disciplinary experience to helping me gain a fresh perspective for
+        software
+        development, emphasizing user-centered design that can empower individuals and communities.
+        When I'm not on my computer, I can be found reading (fantasy 🧙‍♀️ is the BEST) or drawing in my sketchbook.
+        Feel free
+        to reach out and give book reccomendations-I'm not a picky reader 😂.</p>
+    </div>
+    <!-- container for about section's image -->
+    <div id="image-container">
+      <img src="./docs/about-img.jpg" alt="about-image">
+    </div>
+
+  </section>
+  <!-- project section -->
+  <section id="projects-section">
+    <header>
+      <h2 class="section-header">My Projects 🚀</h2>
+    </header>
+    <!-- <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+    </div> -->
+  </section>
+  <!-- contacts -->
+  <section id="contact-section">
+    <div id="contact-info">
+      <header>
+        <h2  id="contact-heading" class="section-header">Let's Connect 🧋 </h2>
+      </header>
+      <p id="contact-text">
+        If you ever feel like having a virtual coffee/bubble tea or simply wish to have a brief conversation, you can
+        locate me on social media or drop me a message right here!
+      </p>
+      <div id="icon-container">
+        <a href="https://github.com/hibaqw" class="contact-icons"><i class="fa-brands fa-github" style="color: #a8df8e;"></i></a>
+        <a href="https://www.linkedin.com/in/hibaq-warsame/" class="contact-icons"><i class="fa-brands fa-linkedin" style="color: #a8df8e;"></i></a>
+      </div>
+    </div>
+    <div class="form-container">
+      <form>
+        <!-- name Field -->
+        <label for="name">Your name (required) </label><br>
+        <input type="text" class="text-input"  id="name" name="contact-me" placeholder="name">
+        <br>
+        <!-- email Field-->
+        <label for="email">Email:</label><br>
+        <input class="text-input" type="email" id="email" name="contact-me" placeholder="email">
+        <br>
+        <!-- message field -->
+        <label for="message"> Your Message:</label> <br>
+        <textarea id="message" name="contact-me" placeholder="message"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="SEND MESSAGE">
+      </form>
+    </div>
+  </section>
+  <!-- footer section -->
+  <footer>
+    <p id="footer-text">Made and developed with ❤️ Hibaq Warsame</p>
+  </footer>
+
+</body>
+
+</html>

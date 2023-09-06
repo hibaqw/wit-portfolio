@@ -43,11 +43,13 @@ ul  {
 
 }
 
-li>a,
-#nav-title-link {
-  /* removing default text-decoration from all anchor tags with an li parent and the portfolio logo */
-  text-decoration: none;
+#nav-title-link, li>a{
+ /* setting portfolio logo and anchor tags with an li parent to size font size x-large */
   font-size: x-large;
+}
+a{
+   /* removing default text-decoration (underline) from all anchor tags*/
+  text-decoration: none;
 }
 
 
@@ -125,7 +127,7 @@ ul {
   /* evenly spaces nav-list-items */
   justify-content: space-around;
   /* ul and all its children take up 25% of parent */
-  width: 25%;
+  width: 30%;
   /* align items vertically in the center of ul container*/
 }
 ul,#hero-section,
